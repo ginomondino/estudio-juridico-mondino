@@ -1,0 +1,173 @@
+*{
+        margin: 0%;
+        padding: 0%;
+}
+/*  General para los 5 HTML */
+body{
+        background-color: #1d0000;
+}
+
+.logo1{
+        margin: auto;
+        display: block;
+}
+
+nav{
+        text-align: right;
+        font-family: 'Playfair Display', serif;
+        background-color: #b9b3b3f8;
+        font-size: larger;
+}
+
+h1{
+        
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        color:#ffffff;
+        font-size: 40px;
+        text-decoration:underline;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+footer{
+        display: flex;
+        background-color: #1a1919f8;
+}
+
+.logoFooter{
+        position: relative;
+        left: 881px;
+}
+
+.info{
+        position: relative;
+        top: 12px;
+        right: 0px;
+        bottom: 0px;
+        left: 8px;
+        line-height: 28px;
+        list-style-type: none;
+        color: #ffffff ;
+        font-family: 'Merriweather', serif;
+        font-size: 13px;
+}
+
+/* INDEX */
+.imagenPrincipal{
+
+        margin: auto;
+        display: block;
+        margin: 5px;
+        width: 1348px ;
+        height: 600px ;
+}
+
+.redes{
+
+        text-align: center;
+}
+
+
+.redes img {
+
+        width: 60px;
+        height: 60px;
+        margin-top: 8px;
+}
+
+#linkedin{
+
+        width: 55px;
+        height: 55px; 
+}
+
+a{
+        text-decoration: none;
+        color: #000000;
+
+
+}
+
+.mapa iframe{
+
+
+        margin: 20px 0px;
+        width: 1344px ;
+        height: 500px;
+}
+
+/* FAMILIA-LABORAL-SUCECIONES*/
+p{
+        font-family: 'Merriweather', serif;
+        text-align: center;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+/* FAMILIA*/
+.subMenuFamilia li{
+        display: inline-block;
+        color: #ffffff;
+        list-style: none;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 78px;
+        margin-right: 90px;
+        margin-bottom: 15px;
+}
+
+/*LABORAL*/
+.subMenuLaboral li{
+        display: inline-block;
+        color: #ffffff;
+        list-style: none;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 103px;
+        margin-right: 220px;
+        margin-bottom: 15px;
+}
+
+/*SUCECIONES*/
+.subMenuSuceciones li{
+
+        display: inline-block;
+        color: #ffffff;
+        list-style: none;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 320px;
+        margin-right: 84px;
+
+
+}
+
+/* CONTACTO */
+form{
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        color:#ffffff;
+
+}
+
+.consulta{
+
+        margin-top: 20px;
+        margin-left: 20px;
+}
+
+.botonenviar{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+}
+
+
+
