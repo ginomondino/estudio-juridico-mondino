@@ -40,11 +40,26 @@ nav .menu{
 
 }
 
-nav .logo1{
-         grid-area: nav;
-         display: flexbox;
-         margin-left: 352px;
+nav .menu:hover{
+                color:darkcyan;
 }
+
+@keyframes apareceLogo{
+                        0% {margin-left: 150px};
+                        25%{margin-left: 250px;};
+                        75%{margin-left: 300px;};
+                        100%{margin-left: 352px};
+}
+
+nav .logo1{
+                grid-area: nav;
+                display: flexbox;
+                margin-left: 352px;
+                animation-name: apareceLogo;
+                animation-duration: 5s;
+}
+
+
 
 h1{
         grid-area: tituloImagen;
@@ -66,6 +81,7 @@ h1{
         margin: 5px;
         width: 1348px ;
         height: 600px ;
+        transform: translate(8px);
 }
 
 .tituloRedes{
@@ -79,6 +95,7 @@ h1{
         margin-top: 10px;
         margin-bottom: 10px
 }
+
 .redes{
         grid-area: redes;
         display: flex;
@@ -93,10 +110,21 @@ h1{
         margin-top: 68px;
 }
 
+.redes img:hover{
+                width: 140px;
+                height: 140px;
+
+}
+
 #linkedin{
         grid-area: redes;
         width: 55px;
         height: 55px; 
+}
+
+#linkedin:hover{
+                width: 140px;
+                height: 140px;
 }
 
 a{
@@ -173,20 +201,38 @@ nav .menuPerfil{
 nav .menuPerfil .I{
                         padding-left: 5px;
 }
+nav .menuPerfil .I:hover{
+                        color: darkcyan;
+}
 nav .menuPerfil .P{
                         padding-left: 5px;
+}
+nav .menuPerfil .P:hover{
+                        color: darkcyan;
 }
 nav .menuPerfil .F{
                         padding-left: 5px;
 }
+nav .menuPerfil .F:hover{
+                        color: darkcyan;
+}
 nav .menuPerfil .L{
                         padding-left: 5px;
+}
+nav .menuPerfil .L:hover{
+                        color: darkcyan;
 }
 nav .menuPerfil .S{
                         padding-left: 5px;
 }
+nav .menuPerfil .S:hover{
+                        color: darkcyan;
+}
 nav .menuPerfil .C{
                         padding-left: 5px;        
+}
+nav .menuPerfil .C:hover{
+                         color: darkcyan;
 }
 
 nav .logo1{
@@ -218,6 +264,7 @@ nav .logo1{
                 font-size: 29px;
                 color: #ffffff;
 }
+
 
 /* TABLET*/
 @media screen and (max-width: 768px){
