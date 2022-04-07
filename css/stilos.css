@@ -2,82 +2,99 @@
         margin: 0%;
         padding: 0%;
 }
-/*  General para los 5 HTML */
-body{
+
+
+
+/* INDEX PC */
+.index{
+        display: grid;
         background-color: #1d0000;
+        overflow-x: hidden;
+        grid-template-rows: 1fr 1fr 0,3fr 1fr 0,5fr;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2px;
+        grid-template-areas:  
+        "nav nav nav"
+        "tituloImagen tituloImagen tituloImagen"
+        "redes redes redes"
+        "mapa mapa mapa"
+        "footer footer footer"
 }
 
-.logo1{
-        margin: auto;
-        display: block;
-}
-
-nav{
-        text-align: right;
-        font-family: 'Playfair Display', serif;
+nav{ 
+        grid-area: nav;
+        display: flex;
         background-color: #b9b3b3f8;
-        font-size: larger;
+        
+}
+
+nav .menu{
+                grid-area: nav;
+                display: flexbox;
+                justify-content:end;
+                margin-top: 145px;
+                margin-left: 12px;
+                font-size: 16px;
+                text-decoration: none;
+                font-family: 'Playfair Display', serif;
+
+}
+
+nav .logo1{
+         grid-area: nav;
+         display: flexbox;
+         margin-left: 352px;
 }
 
 h1{
-        
-        text-align: center;
+        grid-area: tituloImagen;
+        display: flex;
+        justify-content: center;
         font-family: 'Merriweather', serif;
         color:#ffffff;
         font-size: 40px;
         text-decoration:underline;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 10px
 }
 
-footer{
-        display: flex;
-        background-color: #1a1919f8;
-}
-
-.logoFooter{
-        position: relative;
-        left: 881px;
-}
-
-.info{
-        position: relative;
-        top: 12px;
-        right: 0px;
-        bottom: 0px;
-        left: 8px;
-        line-height: 28px;
-        list-style-type: none;
-        color: #ffffff ;
-        font-family: 'Merriweather', serif;
-        font-size: 13px;
-}
-
-/* INDEX */
 .imagenPrincipal{
 
-        margin: auto;
-        display: block;
+        grid-area: tituloImagen;
+        display: flex;
+        justify-content: center;
         margin: 5px;
         width: 1348px ;
         height: 600px ;
 }
 
+.tituloRedes{
+        grid-area: redes;
+        display: flex;
+        justify-content: center;
+        font-family: 'Merriweather', serif;
+        color:#ffffff;
+        font-size: 40px;
+        text-decoration:underline;
+        margin-top: 10px;
+        margin-bottom: 10px
+}
 .redes{
+        grid-area: redes;
+        display: flex;
+        justify-content: center;
 
-        text-align: center;
 }
 
-
 .redes img {
-
+        grid-area: redes;
         width: 60px;
         height: 60px;
-        margin-top: 8px;
+        margin-top: 68px;
 }
 
 #linkedin{
-
+        grid-area: redes;
         width: 55px;
         height: 55px; 
 }
@@ -85,89 +102,322 @@ footer{
 a{
         text-decoration: none;
         color: #000000;
-
-
+}
+.mapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        
 }
 
 .mapa iframe{
-
-
-        margin: 20px 0px;
+        grid-area: mapa;
+        display: flexbox;
         width: 1344px ;
         height: 500px;
+        margin-right: 10px
 }
 
-/* FAMILIA-LABORAL-SUCECIONES*/
-p{
+footer{
+        grid-area: footer;
+        display: flex;
+        background-color: #1a1919f8;
+}
+
+.logoFooter{
+        grid-area: footer;
+        display: flexbox;
+       margin-left: 875px;
+       margin-top: 10px;
+
+}
+
+.info{
+        grid-area: footer;
+        display: flexbox;
+        margin-top: 14px;
+        margin-left: 8px;
+        line-height: 30px;
+        list-style-type: none;
+        color: #ffffff ;
         font-family: 'Merriweather', serif;
-        text-align: center;
-        font-size: 24px;
-        color: #ffffff;
-        line-height: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
-}
-
-/* FAMILIA*/
-.subMenuFamilia li{
-        display: inline-block;
-        color: #ffffff;
-        list-style: none;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-left: 78px;
-        margin-right: 90px;
-        margin-bottom: 15px;
-}
-
-/*LABORAL*/
-.subMenuLaboral li{
-        display: inline-block;
-        color: #ffffff;
-        list-style: none;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-left: 103px;
-        margin-right: 220px;
-        margin-bottom: 15px;
-}
-
-/*SUCECIONES*/
-.subMenuSuceciones li{
-
-        display: inline-block;
-        color: #ffffff;
-        list-style: none;
-        font-size: 20px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 320px;
-        margin-right: 84px;
-
+        font-size: 13px;
 
 }
 
-/* CONTACTO */
-form{
-        text-align: center;
-        font-family: 'Merriweather', serif;
-        color:#ffffff;
+/* PERFIL PC */
+.perfil{
+        display: grid;
+        background-color: #1d0000;
+        overflow-x: hidden;
+        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2px;
+        grid-template-areas:
+        "nav nav nav"
+        "titulo titulo titulo"
+        "texto texto texto"
+        "footer footer footer";
+}
+
+nav .menuPerfil{
+                        grid-area: nav;
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 145px;
+                        margin-right: 40px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        font-family: 'Playfair Display', serif;
+}
+nav .menuPerfil .I{
+                        padding-left: 5px;
+}
+nav .menuPerfil .P{
+                        padding-left: 5px;
+}
+nav .menuPerfil .F{
+                        padding-left: 5px;
+}
+nav .menuPerfil .L{
+                        padding-left: 5px;
+}
+nav .menuPerfil .S{
+                        padding-left: 5px;
+}
+nav .menuPerfil .C{
+                        padding-left: 5px;        
+}
+
+nav .logo1{
+        grid-area: nav;
+        display: flexbox;
+        margin-left: 352px;
+}
+
+.tituloPerfil{
+                grid-area: titulo;
+                display: flexbox;
+                justify-content: center;
+                padding-right: 210px;
+                font-family: 'Merriweather', serif;
+                color:#ffffff;
+                font-size: 40px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-decoration:underline;
+}
+
+.texto{
+                grid-area: texto;
+                display: flex;
+                justify-content: center;
+                padding-left: 50px;
+                padding-right: 250px;
+                font-family: 'Merriweather', serif;
+                font-size: 29px;
+                color: #ffffff;
+}
+
+/* TABLET*/
+@media screen and (max-width: 768px){
+/* INDEX */
+.index{
+        grid-template-columns:1fr 1fr 0,3fr 1fr 0,5fr; 
+        grid-template-rows: (2,1fr);
+        grid-template-areas:
+        "nav nav"
+        "tituloImagen tituloImagen"
+        "redes redes"
+        "mapa mapa"
+        "footer footer"
+}
+nav{ 
+                         width: 980px;
+}
+
+nav .menu{
+                        margin-top: 66px;
+                        font-size: 6px;
+                        margin-left: 220px;
+        
+}
+nav .logo1{
+                        margin-left: 350px;
+                        width: 220px;
+                        margin-top: 10px;
+} 
+.tituloPrincipal{
+                        font-size: 18px;
+                        margin-right: 12px;
+}
+.imagenPrincipal{
+                        width: 930px ;
+                        height: 380px ;
+                        
+
+}
+.tituloRedes{
+                        font-size: 18px;
+                        margin-right: 485px;
+}
+.redes {
+                        display: flexbox;
+                        margin-left: 398px;
+                        justify-content: flex-start;
+}
+.redes img{
+                        width: 45px;
+                        height: 45px; 
+}
+#linkedin{
+                        width: 40px;
+                        height: 40px;
+}
+.mapa{
+                        margin-right: 520px;
+}
+.mapa iframe{
+                        width: 950px ;
+                        height: 360px;
+}
+
+footer{
+                         width: 980px;
+
+}
+.logoFooter{
+                        margin-left: 675px;
+                        margin-top: 5px;
+}
+.logoFooter img{        
+                         width: 85px;     
+
+}
+.info{
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        line-height: 15px;
+                        font-size: 7px;
+}
+ /*PERFIL*/
+.perfil{
+        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
+        grid-template-rows: repeat(2,1fr);   
+        grid-template-areas: 
+        "nav nav"
+        "titulo titulo"
+        "texto texto"
+        "footer footer"; 
+}
+nav .menuPerfil{
+                        margin-top: 66px;
+                        font-size: 6px;
+                        margin-left: 101px;
+}
+nav .logo1{
+                        margin-left: 280px;
+                        width: 220px;
+                        margin-top: 10px;
 
 }
 
-.consulta{
-
-        margin-top: 20px;
-        margin-left: 20px;
-}
-
-.botonenviar{
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-
+.tituloPerfil{
+                        font-size: 18px;
+                        margin-right: 480px;
 
 }
 
+.texto{
+                        font-size: 14px;
+                        margin-right: 520px;
+                        margin-left: 10px;
+
+}
+
+.logoFooter{
+                        margin-left: 510px;
+                        margin-top: 5px;
+}
+.logoFooter img{        
+                        width: 85px;     
+
+}
+.info{
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        line-height: 15px;
+                        font-size: 7px;
+}
+}
+/* CELULAR*/
+@media screen and (max-width: 375px) {
+/* INDEX */  
+.index{
+                        grid-template-columns: repeat(5,1fr);
+                        grid-template-areas: 
+                        "nav"
+                        "tituloImagen"
+                        "redes"
+                        "mapa"
+                        "footer"
+}
+.menu{
+                         font-size: 4px;
+}
+.logo1{
+                        width: 250px;
+                        margin-right: 20px;                     
+} 
+.tituloPrincipal{
+                        font-size: 12px;
+                        margin-right: 810px;
+}                       
+.imagenPrincipal{
+                        width: 1000px;
+}
+.tituloRedes{
+                        font-size: 12px;
+                        margin-right: 810px;
+}
+
+.mapa iframe{
+                        width: 1220px;
+                        height: 120px;
+}
+.logoFooter{
+                        margin-left: 690px;
+                        margin-top: 12px;
+}
+.logoFooter img{
+                        width: 78px; 
+}
+/* PERFIL */
+.perfil{
+        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
+        grid-template-areas:
+        "nav"
+        "titulo"
+        "texto"
+        "footer"
+}
+nav .menuperfil{
+                        margin-left: 500px
+}
+.logo1{
+                        width: 50px;
+                        margin-right: 1px;   
+} 
+.tituloPerfil{
+                        margin-right: 10px;
+}
+.texto{
+                        margin-right: 80px;
+                        margin-left: 90px;
+}
+.logoFooter{
+                        margin-left: 515px;
+}
+}
 
 
