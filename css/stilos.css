@@ -3,249 +3,59 @@
         padding: 0%;
 }
 
-
-
-/* INDEX PC */
-.index{
-        display: grid;
+/*General de los 6 HTML*/
+body{
         background-color: #1d0000;
         overflow-x: hidden;
-        grid-template-rows: 1fr 1fr 0,3fr 1fr 0,5fr;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2px;
-        grid-template-areas:  
-        "nav nav nav"
-        "tituloImagen tituloImagen tituloImagen"
-        "redes redes redes"
-        "mapa mapa mapa"
-        "footer footer footer"
 }
-
-nav{ 
-        grid-area: nav;
-        display: flex;
-        background-color: #b9b3b3f8;
-        
-}
-
-nav .menu{
-                grid-area: nav;
-                display: flexbox;
-                justify-content:end;
-                margin-top: 145px;
-                margin-left: 12px;
-                font-size: 16px;
-                text-decoration: none;
-                font-family: 'Playfair Display', serif;
-
-}
-
-nav .menu:hover{
-                color:darkcyan;
-}
-
-@keyframes apareceLogo{
-                        0% {margin-left: 150px};
-                        25%{margin-left: 250px;};
-                        75%{margin-left: 300px;};
-                        100%{margin-left: 352px};
-}
-
-nav .logo1{
-                grid-area: nav;
-                display: flexbox;
-                margin-left: 352px;
-                animation-name: apareceLogo;
-                animation-duration: 5s;
-}
-
-
-
-h1{
-        grid-area: tituloImagen;
-        display: flex;
-        justify-content: center;
-        font-family: 'Merriweather', serif;
-        color:#ffffff;
-        font-size: 40px;
-        text-decoration:underline;
-        margin-top: 10px;
-        margin-bottom: 10px
-}
-
-.imagenPrincipal{
-
-        grid-area: tituloImagen;
-        display: flex;
-        justify-content: center;
-        margin: 5px;
-        width: 1348px ;
-        height: 600px ;
-        transform: translate(8px);
-}
-
-.tituloRedes{
-        grid-area: redes;
-        display: flex;
-        justify-content: center;
-        font-family: 'Merriweather', serif;
-        color:#ffffff;
-        font-size: 40px;
-        text-decoration:underline;
-        margin-top: 10px;
-        margin-bottom: 10px
-}
-
-.redes{
-        grid-area: redes;
-        display: flex;
-        justify-content: center;
-
-}
-
-.redes img {
-        grid-area: redes;
-        width: 60px;
-        height: 60px;
-        margin-top: 68px;
-}
-
-.redes img:hover{
-                width: 140px;
-                height: 140px;
-
-}
-
-#linkedin{
-        grid-area: redes;
-        width: 55px;
-        height: 55px; 
-}
-
-#linkedin:hover{
-                width: 140px;
-                height: 140px;
-}
-
-a{
-        text-decoration: none;
-        color: #000000;
-}
-.mapa{
-        grid-area: mapa;
-        display: flex;
-        justify-content: center;
-        
-}
-
-.mapa iframe{
-        grid-area: mapa;
+.menu{
         display: flexbox;
-        width: 1344px ;
-        height: 500px;
-        margin-right: 10px
+        justify-content:end;
+        margin-top: 10px;
+        margin-left: 960px;
+        font-size: 16px;
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+}
+.row .menu a:hover{
+        color:darkcyan;
+}
+@keyframes apareceLogo{
+                0% {margin-left: 100px};
+                25%{margin-left: 200px;};
+                75%{margin-left: 300px;};
+                100%{margin-left: 355px};
+}
+
+.row .logo1{
+        display: flexbox;
+        margin-left: 355px;
+        animation-name: apareceLogo;
+        animation-duration: 5s;
 }
 
 footer{
-        grid-area: footer;
-        display: flex;
         background-color: #1a1919f8;
 }
-
 .logoFooter{
-        grid-area: footer;
-        display: flexbox;
-       margin-left: 875px;
-       margin-top: 10px;
-
+       margin-left: 850px;
+       margin-top: 20px;
 }
-
 .info{
-        grid-area: footer;
-        display: flexbox;
-        margin-top: 14px;
-        margin-left: 8px;
+        margin-top: 20px;
+        text-align:start;
         line-height: 30px;
-        list-style-type: none;
         color: #ffffff ;
         font-family: 'Merriweather', serif;
         font-size: 13px;
-
 }
 
-/* PERFIL PC */
-.perfil{
-        display: grid;
-        background-color: #1d0000;
-        overflow-x: hidden;
-        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2px;
-        grid-template-areas:
-        "nav nav nav"
-        "titulo titulo titulo"
-        "texto texto texto"
-        "footer footer footer";
+li{
+        list-style-type: none;
 }
-
-nav .menuPerfil{
-                        grid-area: nav;
-                        display: flex;
-                        flex-direction: row;
-                        margin-top: 145px;
-                        margin-right: 40px;
-                        font-size: 16px;
-                        text-decoration: none;
-                        font-family: 'Playfair Display', serif;
-}
-nav .menuPerfil .I{
-                        padding-left: 5px;
-}
-nav .menuPerfil .I:hover{
-                        color: darkcyan;
-}
-nav .menuPerfil .P{
-                        padding-left: 5px;
-}
-nav .menuPerfil .P:hover{
-                        color: darkcyan;
-}
-nav .menuPerfil .F{
-                        padding-left: 5px;
-}
-nav .menuPerfil .F:hover{
-                        color: darkcyan;
-}
-nav .menuPerfil .L{
-                        padding-left: 5px;
-}
-nav .menuPerfil .L:hover{
-                        color: darkcyan;
-}
-nav .menuPerfil .S{
-                        padding-left: 5px;
-}
-nav .menuPerfil .S:hover{
-                        color: darkcyan;
-}
-nav .menuPerfil .C{
-                        padding-left: 5px;        
-}
-nav .menuPerfil .C:hover{
-                         color: darkcyan;
-}
-
-nav .logo1{
-        grid-area: nav;
-        display: flexbox;
-        margin-left: 352px;
-}
-
-.tituloPerfil{
-                grid-area: titulo;
-                display: flexbox;
+.titulos{
+                display: flex;
                 justify-content: center;
-                padding-right: 210px;
                 font-family: 'Merriweather', serif;
                 color:#ffffff;
                 font-size: 40px;
@@ -254,116 +64,159 @@ nav .logo1{
                 text-decoration:underline;
 }
 
+/*PERFIL-FAMILIA-LABORAL-SUCECIONES */
 .texto{
-                grid-area: texto;
-                display: flex;
-                justify-content: center;
-                padding-left: 50px;
-                padding-right: 250px;
-                font-family: 'Merriweather', serif;
-                font-size: 29px;
-                color: #ffffff;
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
+        margin-right: 35px;
+        font-family: 'Merriweather', serif;
+        font-size: 29px;
+        color: #ffffff;
 }
 
+/* INDEX*/
 
-/* TABLET*/
-@media screen and (max-width: 768px){
-/* INDEX */
-.index{
-        grid-template-columns:1fr 1fr 0,3fr 1fr 0,5fr; 
-        grid-template-rows: (2,1fr);
-        grid-template-areas:
-        "nav nav"
-        "tituloImagen tituloImagen"
-        "redes redes"
-        "mapa mapa"
-        "footer footer"
-}
 nav{ 
-                         width: 980px;
-}
 
-nav .menu{
-                        margin-top: 66px;
-                        font-size: 6px;
-                        margin-left: 220px;
-        
-}
-nav .logo1{
-                        margin-left: 350px;
-                        width: 220px;
-                        margin-top: 10px;
-} 
-.tituloPrincipal{
-                        font-size: 18px;
-                        margin-right: 12px;
+        display: flex;
+        background-color: #b9b3b3f8;
 }
 .imagenPrincipal{
-                        width: 930px ;
-                        height: 380px ;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        width: 1800px ;
+        height: 600px ;
+        transform: translate(-2px);
+}
+.row{
+        display: flex;
+        justify-content: center;
+}
+
+.row .insta {
+        width: 60px;
+        height: 60px;
+}
+
+.row .face{
+         width: 60px;
+        height: 60px;
+}
+
+.row .insta:hover{
+                width: 140px;
+                height: 140px;
+
+}
+
+.row .face:hover{
+        width: 140px;
+        height: 140px;
+
+}
+
+#linkedin{
+        width: 55px;
+        height: 55px; 
+}
+
+#linkedin:hover{
+                width: 140px;
+                height: 140px;
+}
+a{
+        text-decoration: none;
+        color: #000000;
+}
+.mapa{
+        display: flex;
+        justify-content: center;      
+}
+.mapa iframe{
+        display: flexbox;
+        width: 1900px ;
+        height: 600px;
+        margin-right: 10px;
+        transform: translate(4px);
+}
+/*FAMILIA*/
+.subMenuFamilia li{
+        display: flex;
+        color: #ffffff;
+        list-style: none;
+        font-size: 22px;
+        margin-top: 90px;
+        margin-left: 78px;
+        margin-right: 90px;
+        margin-bottom: 95px;
+        font-family: 'Merriweather', serif;
+}
+
+/* TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+/* INDEX*/
+
+.menu{
+
+                        font-size: 6px;
+        
+}
+.logo1{
+                        width: 220px;
+ 
+} 
+
+.imagenPrincipal{
+                        width: 250px ;
+                        height: 150px ;
                         
 
 }
-.tituloRedes{
-                        font-size: 18px;
-                        margin-right: 485px;
+.titulos{
+                        text-align: center;
+                        font-size: 12px;
+
 }
-.redes {
-                        display: flexbox;
-                        margin-left: 398px;
-                        justify-content: flex-start;
+
+.redes .insta{
+                        width: 42px;
+                        height: 42px; 
 }
-.redes img{
-                        width: 45px;
-                        height: 45px; 
+.redes .face{
+                        width: 39px;
+                        height: 39px;
 }
 #linkedin{
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
 }
-.mapa{
-                        margin-right: 520px;
-}
+
 .mapa iframe{
-                        width: 950px ;
-                        height: 360px;
+                         width: 350px ;
+                         height: 150px ;        
 }
 
-footer{
-                         width: 980px;
+footer .logoFooter img{        
+                         width: 60px;     
 
 }
-.logoFooter{
-                        margin-left: 675px;
-                        margin-top: 5px;
-}
-.logoFooter img{        
-                         width: 85px;     
-
-}
-.info{
+footer .info{
                         margin-top: 10px;
-                        margin-left: 10px;
-                        line-height: 15px;
-                        font-size: 7px;
-}
- /*PERFIL*/
-.perfil{
-        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
-        grid-template-rows: repeat(2,1fr);   
-        grid-template-areas: 
-        "nav nav"
-        "titulo titulo"
-        "texto texto"
-        "footer footer"; 
-}
-nav .menuPerfil{
-                        margin-top: 66px;
+                        line-height: 11px;
                         font-size: 6px;
-                        margin-left: 101px;
+}
+
+ /*PERFIL*/
+
+nav .menuPerfil{
+
+                        font-size: 6px;
+
 }
 nav .logo1{
-                        margin-left: 280px;
+ 
                         width: 220px;
                         margin-top: 10px;
 
@@ -371,19 +224,14 @@ nav .logo1{
 
 .tituloPerfil{
                         font-size: 18px;
-                        margin-right: 480px;
 
 }
 
 .texto{
                         font-size: 14px;
-                        margin-right: 520px;
-                        margin-left: 10px;
-
 }
 
 .logoFooter{
-                        margin-left: 510px;
                         margin-top: 5px;
 }
 .logoFooter img{        
@@ -392,79 +240,7 @@ nav .logo1{
 }
 .info{
                         margin-top: 10px;
-                        margin-left: 10px;
                         line-height: 15px;
                         font-size: 7px;
 }
 }
-/* CELULAR*/
-@media screen and (max-width: 375px) {
-/* INDEX */  
-.index{
-                        grid-template-columns: repeat(5,1fr);
-                        grid-template-areas: 
-                        "nav"
-                        "tituloImagen"
-                        "redes"
-                        "mapa"
-                        "footer"
-}
-.menu{
-                         font-size: 4px;
-}
-.logo1{
-                        width: 250px;
-                        margin-right: 20px;                     
-} 
-.tituloPrincipal{
-                        font-size: 12px;
-                        margin-right: 810px;
-}                       
-.imagenPrincipal{
-                        width: 1000px;
-}
-.tituloRedes{
-                        font-size: 12px;
-                        margin-right: 810px;
-}
-
-.mapa iframe{
-                        width: 1220px;
-                        height: 120px;
-}
-.logoFooter{
-                        margin-left: 690px;
-                        margin-top: 12px;
-}
-.logoFooter img{
-                        width: 78px; 
-}
-/* PERFIL */
-.perfil{
-        grid-template-rows: 1fr 0.5fr 1fr 0,5fr;
-        grid-template-areas:
-        "nav"
-        "titulo"
-        "texto"
-        "footer"
-}
-nav .menuperfil{
-                        margin-left: 500px
-}
-.logo1{
-                        width: 50px;
-                        margin-right: 1px;   
-} 
-.tituloPerfil{
-                        margin-right: 10px;
-}
-.texto{
-                        margin-right: 80px;
-                        margin-left: 90px;
-}
-.logoFooter{
-                        margin-left: 515px;
-}
-}
-
-
