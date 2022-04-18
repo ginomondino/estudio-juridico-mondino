@@ -12,7 +12,7 @@ body{
         display: flexbox;
         justify-content:end;
         margin-top: 10px;
-        margin-left: 960px;
+        margin-left: 1140px;
         font-size: 16px;
         text-decoration: none;
         font-family: 'Playfair Display', serif;
@@ -21,24 +21,25 @@ body{
         color:darkcyan;
 }
 @keyframes apareceLogo{
-                0% {margin-left: 100px};
-                25%{margin-left: 200px;};
-                75%{margin-left: 300px;};
-                100%{margin-left: 355px};
+        0% {margin-left: 100px};
+        25%{margin-left: 250px;};
+        75%{margin-left: 320px;};
+        100%{margin-left: 370px};
 }
 
 .row .logo1{
         display: flexbox;
-        margin-left: 355px;
+        margin-left: 370px;
         animation-name: apareceLogo;
         animation-duration: 5s;
 }
 
 footer{
         background-color: #1a1919f8;
+        margin-top: 21px;
 }
 .logoFooter{
-       margin-left: 850px;
+       margin-left: 990px;
        margin-top: 20px;
 }
 .info{
@@ -54,14 +55,14 @@ li{
         list-style-type: none;
 }
 .titulos{
-                display: flex;
-                justify-content: center;
-                font-family: 'Merriweather', serif;
-                color:#ffffff;
-                font-size: 40px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                text-decoration:underline;
+        display: flex;
+        justify-content: center;
+        font-family: 'Merriweather', serif;
+        color:#ffffff;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration:underline;
 }
 
 /*PERFIL-FAMILIA-LABORAL-SUCECIONES */
@@ -70,8 +71,9 @@ li{
         justify-content: center;
         margin-left: 35px;
         margin-right: 35px;
+        margin-top: 21px;
         font-family: 'Merriweather', serif;
-        font-size: 29px;
+        font-size: 32px;
         color: #ffffff;
 }
 
@@ -106,8 +108,8 @@ nav{
 }
 
 .row .insta:hover{
-                width: 140px;
-                height: 140px;
+        width: 140px;
+        height: 140px;
 
 }
 
@@ -123,8 +125,8 @@ nav{
 }
 
 #linkedin:hover{
-                width: 140px;
-                height: 140px;
+        width: 140px;
+        height: 140px;
 }
 a{
         text-decoration: none;
@@ -154,93 +156,217 @@ a{
         font-family: 'Merriweather', serif;
 }
 
-/* TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-/* INDEX*/
+/*LABORAL*/
 
-.menu{
+.subMenuLaboral li{
+        display: flex;
+        color: #ffffff;
+        list-style: none;
+        font-size: 22px;
+        margin-top: 90px;
+        margin-left: 100px;
+        margin-right: 220px;
+        margin-bottom: 95px;
+        font-family: 'Merriweather', serif;  
+}
 
-                        font-size: 6px;
+/*SUCECIONES*/
+
+.subMenuSuceciones li{
+        display: flex;
+        color: #ffffff;
+        list-style: none;
+        font-size: 22px;
+        margin-top: 90px;
+        margin-left: 180px;
+        margin-right: 220px;
+        margin-bottom: 95px;
+        font-family: 'Merriweather', serif;  
+}
+
+/*CONTACTO*/
+
+.datos{
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        color:#ffffff;
+        margin-left: 10px;
+
+}
+
+.consulta{
+
+        margin-top: 20px;
         
 }
-.logo1{
-                        width: 220px;
- 
+textarea{
+        width: 900px;
+        height: 300px; 
+}
+
+button{
+        width: 60px ;
+        height: 30px;
+}
+
+
+/* TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+ /* GENERAL DE LOS 6 HTML*/
+
+.container-fluid{
+        overflow: hidden;
+}
+.menu{
+        font-size: 10px;
+        margin-left: 520px;
+}
+
+@keyframes apareceLogo{
+        0% {margin-left: 100px};
+        25%{margin-left: 150px;};
+        75%{margin-left: 200px;};
+        100%{margin-left: 250px};
+}
+
+.row .logo1{
+        width: 250px;
+        margin-left: 250px;
 } 
-
-.imagenPrincipal{
-                        width: 250px ;
-                        height: 150px ;
-                        
-
-}
 .titulos{
-                        text-align: center;
-                        font-size: 12px;
-
+        text-align: center;
+        font-size: 23px;
 }
 
+footer{
+        display: flex;
+        align-items:stretch;
+}
+footer .logoFooter{
+        margin-top: 10px;
+        margin-left: 500px;
+ }
+
+ .logoFooter img{
+         
+         width: 80px;
+ }
+
+ .info{
+        margin-left: 12px;
+         margin-top: 14px;
+         line-height: 12px;
+         font-size: 6px;
+ }
+
+/*PERFIL-FAMILIA-LABORAL-SUCECIONES */
+
+.texto{
+        font-size: 20px;
+}
+
+/* INDEX */
+.imagenPrincipal{
+        width: 800px ;
+        height: 350px ;
+}
 .redes .insta{
-                        width: 42px;
-                        height: 42px; 
+        width: 42px;
+        height: 42px; 
 }
 .redes .face{
-                        width: 39px;
-                        height: 39px;
+        width: 39px;
+        height: 39px;
 }
 #linkedin{
-                        width: 35px;
-                        height: 35px;
+        width: 35px;
+        height: 35px;
 }
 
 .mapa iframe{
-                         width: 350px ;
-                         height: 150px ;        
+        width: 800px ;
+        height: 350px ;      
 }
-
-footer .logoFooter img{        
-                         width: 60px;     
-
-}
-footer .info{
-                        margin-top: 10px;
-                        line-height: 11px;
-                        font-size: 6px;
-}
-
- /*PERFIL*/
-
-nav .menuPerfil{
-
-                        font-size: 6px;
-
-}
-nav .logo1{
- 
-                        width: 220px;
-                        margin-top: 10px;
 
 }
 
-.tituloPerfil{
-                        font-size: 18px;
 
+/*CELULAR*/
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+
+ /* GENERAL DE LOS 6 HTML*/
+.container-fluid{
+        overflow: hidden;
 }
+.menu{
+        font-size: 8px;
+        margin-left: 210px;
+}
+
+@keyframes apareceLogo{
+        0% {margin-left: 50px};
+        25%{margin-left: 75px;};
+        75%{margin-left: 100px;};
+        100%{margin-left: 135px};
+}
+
+.row .logo1{
+        width: 180px;
+        margin-left: 135px;
+} 
+
+.titulos{
+        font-size: 16px;
+        text-align: center;      
+}
+
+footer .logoFooter{
+        margin-top: 10px;
+        margin-left: 100px;
+ }
+
+ .logoFooter img{   
+         width: 60px;
+ }
+
+ .info{
+         margin-right: 90px;
+         margin-top: 14px;
+         line-height: 9px;
+         font-size: 6px;
+ }
+
+ /*PERFIL-FAMILIA-LABORAL-SUCECIONES */
 
 .texto{
-                        font-size: 14px;
+        font-size: 15px;
+        margin-top: 5px;
 }
 
-.logoFooter{
-                        margin-top: 5px;
-}
-.logoFooter img{        
-                        width: 85px;     
+ /*INDEX*/
 
+.imagenPrincipal{
+        width: 450px ;
+        height: 200px ;
 }
-.info{
-                        margin-top: 10px;
-                        line-height: 15px;
-                        font-size: 7px;
+.mapa iframe{
+        width: 450px ;
+        height: 250px ;      
+}
+
+.redes .insta{
+        width: 32px;
+        height: 32px; 
+}
+.redes .face{
+        width: 32px;
+        height: 32px;
+}
+#linkedin{
+        width: 27px;
+        height: 27px;
 }
 }
