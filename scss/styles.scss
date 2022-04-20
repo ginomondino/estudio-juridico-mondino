@@ -1,0 +1,65 @@
+@import "index";
+@import "variables";
+
+body{
+    background-color: $colorprincipal;
+    overflow-x: hidden;
+}
+nav{ 
+    display: flex;
+    background-color: $colornav;
+.menu{
+    display: flexbox;
+    justify-content:end;
+    margin-top: 10px;
+    margin-left: 1140px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+a:hover{
+    color:darkcyan;
+}
+}
+.logo1{
+    display: flexbox;
+    margin-left: 370px;
+    animation-name: apareceLogo;
+    animation-duration: 5s;  
+@keyframes apareceLogo{
+    0% {margin-left: 100px};
+    25%{margin-left: 250px;};
+    75%{margin-left: 320px;};
+    100%{margin-left: 370px};
+}
+}
+}
+footer{
+    background-color: $colorfooter;
+    margin-top: 21px;
+.logoFooter{
+   margin-left: 990px;
+   margin-top: 20px;
+}
+.info{
+    margin-top: 20px;
+    text-align:start;
+    line-height: 30px;
+    color: #ffffff ;
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+li{
+    list-style-type: none;
+}
+}
+}
+.titulos{
+    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    color:$colortitulos;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration:underline;
+}
+

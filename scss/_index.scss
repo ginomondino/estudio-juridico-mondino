@@ -1,0 +1,51 @@
+.imagenPrincipal{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    width: 1800px ;
+    height: 600px ;
+    transform: translate(-2px);
+}
+.row{
+    display: flex;
+    justify-content: center;
+.insta {
+    width: 60px;
+    height: 60px;
+    & :hover{
+        width: 140px;
+        height: 140px;
+    }
+}
+ .face{
+     width: 60px;
+    height: 60px;
+    &:hover{
+    width: 140px;
+    height: 140px;
+}
+}
+#linkedin{
+    width: 55px;
+    height: 55px;
+    &:hover{
+    width: 140px;
+    height: 140px;
+}
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+}
+.mapa{
+    display: flex;
+    justify-content: center;      
+iframe{
+    display: flexbox;
+    width: 1900px ;
+    height: 600px;
+    margin-right: 10px;
+    transform: translate(4px);
+}
+}

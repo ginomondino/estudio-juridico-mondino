@@ -1,0 +1,101 @@
+.imagenPrincipal {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 1800px;
+  height: 600px;
+  transform: translate(-2px); }
+
+.row {
+  display: flex;
+  justify-content: center; }
+  .row .insta {
+    width: 60px;
+    height: 60px; }
+    .row .insta :hover {
+      width: 140px;
+      height: 140px; }
+  .row .face {
+    width: 60px;
+    height: 60px; }
+    .row .face:hover {
+      width: 140px;
+      height: 140px; }
+  .row #linkedin {
+    width: 55px;
+    height: 55px; }
+    .row #linkedin:hover {
+      width: 140px;
+      height: 140px; }
+  .row a {
+    text-decoration: none;
+    color: #000000; }
+
+.mapa {
+  display: flex;
+  justify-content: center; }
+  .mapa iframe {
+    display: flexbox;
+    width: 1900px;
+    height: 600px;
+    margin-right: 10px;
+    transform: translate(4px); }
+
+body {
+  background-color: #1d0000;
+  overflow-x: hidden; }
+
+nav {
+  display: flex;
+  background-color: #b9b3b3f8; }
+  nav .menu {
+    display: flexbox;
+    justify-content: end;
+    margin-top: 10px;
+    margin-left: 1140px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; }
+    nav .menu a:hover {
+      color: darkcyan; }
+  nav .logo1 {
+    display: flexbox;
+    margin-left: 370px;
+    animation-name: apareceLogo;
+    animation-duration: 5s; }
+
+@keyframes apareceLogo {
+  0% {
+    margin-left: 100px; }
+  25% {
+    margin-left: 250px; }
+  75% {
+    margin-left: 320px; }
+  100% {
+    margin-left: 370px; } }
+
+footer {
+  background-color: #1a1919f8;
+  margin-top: 21px; }
+  footer .logoFooter {
+    margin-left: 990px;
+    margin-top: 20px; }
+  footer .info {
+    margin-top: 20px;
+    text-align: start;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-size: 13px; }
+    footer .info li {
+      list-style-type: none; }
+
+.titulos {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline; }

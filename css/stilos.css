@@ -8,6 +8,11 @@ body{
         background-color: #1d0000;
         overflow-x: hidden;
 }
+nav{ 
+
+        display: flex;
+        background-color: #b9b3b3f8;
+}
 .menu{
         display: flexbox;
         justify-content:end;
@@ -79,11 +84,7 @@ li{
 
 /* INDEX*/
 
-nav{ 
 
-        display: flex;
-        background-color: #b9b3b3f8;
-}
 .imagenPrincipal{
         display: flex;
         justify-content: center;
