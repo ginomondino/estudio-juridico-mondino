@@ -1,3 +1,4 @@
+/* INDEX*/
 .imagenPrincipal {
   display: flex;
   justify-content: center;
@@ -12,18 +13,18 @@
   .row .insta {
     width: 60px;
     height: 60px; }
-    .row .insta :hover {
+    .row .insta:hover {
       width: 140px;
       height: 140px; }
   .row .face {
-    width: 60px;
-    height: 60px; }
+    width: 55px;
+    height: 55px; }
     .row .face:hover {
       width: 140px;
       height: 140px; }
   .row #linkedin {
-    width: 55px;
-    height: 55px; }
+    width: 60px;
+    height: 60px; }
     .row #linkedin:hover {
       width: 140px;
       height: 140px; }
@@ -41,6 +42,33 @@
     margin-right: 10px;
     transform: translate(4px); }
 
+/*FAMILIA*/
+.subMenuFamilia li, .subMenuLaboral li, .subMenuSuceciones li {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+  font-size: 22px;
+  margin-top: 90px;
+  margin-left: 78px;
+  margin-right: 90px;
+  margin-bottom: 95px;
+  font-family: "Merriweather", serif; }
+
+/*LABORAL*/
+.subMenuLaboral {
+  margin-left: 100px;
+  margin-right: 220px; }
+
+/*SUCECIONES*/
+.subMenuSuceciones {
+  margin-left: 180px;
+  margin-right: 220px; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/*General de los 6 HTML*/
 body {
   background-color: #1d0000;
   overflow-x: hidden; }
@@ -55,7 +83,7 @@ nav {
     margin-left: 1140px;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Playfair Display', serif; }
+    font-family: "Playfair Display", serif; }
     nav .menu a:hover {
       color: darkcyan; }
   nav .logo1 {
@@ -85,17 +113,25 @@ footer {
     text-align: start;
     line-height: 30px;
     color: #ffffff;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 13px; }
     footer .info li {
       list-style-type: none; }
 
-.titulos {
+.titulos, .texto {
   display: flex;
   justify-content: center;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: #ffffff;
   font-size: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: underline; }
+
+/*PERFIL-FAMILIA-LABORAL-SUCECIONES */
+.texto {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 21px;
+  font-size: 32px;
+  text-decoration: none; }

@@ -1,0 +1,29 @@
+@import "variables";
+
+/*FAMILIA*/
+.subMenuFamilia li{
+    display: flex;
+    color: $colortitulos;
+    list-style: none;
+    font-size: 22px;
+    margin-top: 90px;
+    margin-left: 78px;
+    margin-right: 90px;
+    margin-bottom: 95px;
+    font-family: $fuentePrincipal;
+}
+/*LABORAL*/
+
+.subMenuLaboral{
+    @extend .subMenuFamilia;
+    margin-left: 100px;
+    margin-right: 220px;
+
+}
+/*SUCECIONES*/
+
+.subMenuSuceciones{
+    @extend .subMenuFamilia;
+    margin-left: 180px;
+    margin-right: 220px;
+}

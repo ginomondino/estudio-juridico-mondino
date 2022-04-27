@@ -83,8 +83,6 @@ li{
 }
 
 /* INDEX*/
-
-
 .imagenPrincipal{
         display: flex;
         justify-content: center;
@@ -194,7 +192,6 @@ a{
         margin-left: 10px;
 
 }
-
 .consulta{
 
         margin-top: 20px;

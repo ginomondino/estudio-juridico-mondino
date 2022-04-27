@@ -1,6 +1,11 @@
 @import "index";
 @import "variables";
-
+@import "subMenu";
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*General de los 6 HTML*/
 body{
     background-color: $colorprincipal;
     overflow-x: hidden;
@@ -15,7 +20,7 @@ nav{
     margin-left: 1140px;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Playfair Display', serif;
+    font-family: $fuenteNav;
 a:hover{
     color:darkcyan;
 }
@@ -45,7 +50,7 @@ footer{
     text-align:start;
     line-height: 30px;
     color: #ffffff ;
-    font-family: 'Merriweather', serif;
+    font-family: $fuentePrincipal;
     font-size: 13px;
 li{
     list-style-type: none;
@@ -55,11 +60,23 @@ li{
 .titulos{
     display: flex;
     justify-content: center;
-    font-family: 'Merriweather', serif;
+    font-family: $fuentePrincipal;
     color:$colortitulos;
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-decoration:underline;
 }
+
+/*PERFIL-FAMILIA-LABORAL-SUCECIONES */
+.texto{
+    @extend .titulos;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 21px;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+
 

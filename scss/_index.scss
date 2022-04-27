@@ -1,3 +1,5 @@
+
+/* INDEX*/
 .imagenPrincipal{
     display: flex;
     justify-content: center;
@@ -6,31 +8,40 @@
     height: 600px ;
     transform: translate(-2px);
 }
+
+$redes: (
+        ancho: 60px,
+        largo: 60px,
+        anchoArriba: 140px,
+        largoArriba: 140px,
+        ancholinke: 55px,
+        largolinke: 55px,
+);
 .row{
     display: flex;
     justify-content: center;
-.insta {
-    width: 60px;
-    height: 60px;
-    & :hover{
-        width: 140px;
-        height: 140px;
+.insta{
+        width: map-get($redes,ancho);
+        height: map-get($redes,largo);
+        &:hover{
+            width: map-get($redes,anchoArriba);
+            height: map-get($redes,largoArriba);
+        }
+    }
+.face{
+    width: map-get($redes,ancholinke);
+    height: map-get($redes,largolinke);
+    &:hover{
+        width: map-get($redes,anchoArriba);
+        height: map-get($redes,largoArriba);
     }
 }
- .face{
-     width: 60px;
-    height: 60px;
-    &:hover{
-    width: 140px;
-    height: 140px;
-}
-}
 #linkedin{
-    width: 55px;
-    height: 55px;
+    width: map-get($redes,ancho);
+    height: map-get($redes,largo);
     &:hover{
-    width: 140px;
-    height: 140px;
+        width: map-get($redes,anchoArriba);
+        height: map-get($redes,largoArriba);
 }
 }
 a{
@@ -38,14 +49,17 @@ a{
     color: #000000;
 }
 }
+@mixin mapa ($ancho,$largo,$margen) {
+    width: $ancho;
+    height: $largo;
+    margin-right: $margen;
+}
 .mapa{
     display: flex;
     justify-content: center;      
 iframe{
     display: flexbox;
-    width: 1900px ;
-    height: 600px;
-    margin-right: 10px;
+    @include mapa (1900px,600px,10px);
     transform: translate(4px);
 }
 }
