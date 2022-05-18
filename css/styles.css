@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   margin: 5px;
-  width: 1800px;
+  width: 1580px;
   height: 600px;
   transform: translate(-2px); }
 
@@ -95,30 +95,19 @@ nav {
   display: flex;
   background-color: #b9b3b3f8; }
   nav .menu {
-    display: flexbox;
-    justify-content: end;
-    margin-top: 10px;
-    margin-left: 1140px;
+    margin-bottom: 0px;
+    margin-left: 1100px;
     font-size: 16px;
-    text-decoration: none;
     font-family: "Playfair Display", serif; }
+    nav .menu li {
+      display: inline; }
     nav .menu a:hover {
       color: darkcyan; }
   nav .logo1 {
     display: flexbox;
-    margin-left: 370px;
+    margin-left: 400px;
     animation-name: apareceLogo;
     animation-duration: 5s; }
-
-@keyframes apareceLogo {
-  0% {
-    margin-left: 100px; }
-  25% {
-    margin-left: 250px; }
-  75% {
-    margin-left: 320px; }
-  100% {
-    margin-left: 370px; } }
 
 footer {
   background-color: #1a1919f8;
@@ -161,16 +150,8 @@ footer {
     overflow-x: hidden; }
   nav .menu {
     font-size: 10px;
-    margin-left: 530px; }
-  @keyframes apareceLogo {
-    0% {
-      margin-left: 100px; }
-    25% {
-      margin-left: 150px; }
-    75% {
-      margin-left: 200px; }
-    100% {
-      margin-left: 250px; } }
+    margin-left: 245px;
+    margin-top: 10px; }
   .row .logo1 {
     width: 250px;
     margin-left: 250px; }
@@ -186,7 +167,7 @@ footer {
     footer .logoFooter img {
       width: 80px; }
   footer .info {
-    margin-left: 12px;
+    margin-left: 6px;
     margin-top: 14px;
     line-height: 12px;
     font-size: 6px; }
@@ -196,7 +177,7 @@ footer {
   /* INDEX */
   .imagenPrincipal {
     width: 800px;
-    height: 350px; }
+    height: 305px; }
   .redes .insta {
     width: 42px;
     height: 42px; }
@@ -243,7 +224,7 @@ footer {
     overflow-x: hidden; }
   nav .menu {
     font-size: 8px;
-    margin-left: 80px; }
+    margin-left: 44px; }
   .row .logo1 {
     width: 180px;
     margin-left: 80px;
@@ -257,7 +238,7 @@ footer {
     footer .logoFooter img {
       width: 60px; }
   footer .info {
-    margin-right: 92px;
+    margin-right: 94px;
     margin-top: 14px;
     line-height: 9px;
     font-size: 4px; }
